@@ -1,0 +1,386 @@
+*{
+    padding: 0;
+    margin:0;
+}
+
+body{
+    margin:0 20% 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+
+    min-height: 100vh;
+
+    /* border: 1px solid black; */
+}
+
+.background{
+    position: fixed;
+    left: -5%;
+    top: 17%;
+    width: 100%;
+    height: 83%;
+
+    z-index:-99;
+    opacity: 0.2;
+
+    background-image: url(/cats/paws.png);
+}
+
+.left{
+    width:33%;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+
+    /* border:1px solid black; */
+}
+
+.left .main-cat{
+    margin-top: 48.5%;
+    margin-bottom: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+}
+
+.left .main-cat img{
+    width: 69%;
+    height: 100%;
+
+    transition: .2s all ease-in-out;
+}
+
+.left .main-cat:hover img{
+    width:75%;
+}
+
+.left .main-about{
+    width: 75%;
+}
+
+.left .main-about ul{
+    margin-top: 3px;
+    margin-left: 7%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left .main-about li{
+    text-align: center;
+    list-style-type: none;
+}
+
+.left .header{
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 700;
+    color:rgb(168, 118, 153);
+}
+
+.left .header-info{
+    font-style: italic;
+    font-size: 23px;
+    color:rgb(221, 146, 198);
+}
+
+.right{
+    width:50%;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    /* border:1px solid black; */
+}
+
+
+.with-cat{
+    width:75%;
+    margin-left: -2px;
+}
+
+#info-cat{
+    z-index: 0;
+    width:100%;
+}
+.info{
+    width:75%;
+    margin-bottom: 10px;
+    max-height: 30px;
+
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+
+    transition: .37s all ease-in-out;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.with-cat .cat-above{
+    width: 50px;
+    height: 35px;
+    margin-left: 68%;
+    
+    /* left:65%; */
+
+    z-index: 100;
+    /* position: absolute; */
+
+    transform:scaleX(-1);
+    /* background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(/cats/cartoon_cat.png); */ 
+}
+
+.with-cat .cat-above img{
+    margin-top:5px;
+    
+    width: 70px;
+    height: 35px;
+
+}
+
+.info-inside input{
+    display: none;
+}
+
+.info-inside{
+    margin-left: 7px;
+    margin-right: 5px;
+
+    position:relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.info-inside .text{
+    margin-top:1px;
+}
+
+.info .arrow{
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    
+    cursor: pointer;
+    transform-origin: 37% 50%;
+    transform: rotate(90deg);
+    transition: all .35s ease-in-out;
+}
+
+.info .text{
+    font-size: 19px;
+    font-weight: 500;
+
+    margin-top: 5px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+br {
+    display: block;
+    content: ""; 
+    margin-top: 7px; 
+}
+
+.hidden-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-size: 17px;
+    margin: 0 3% 5px 9%;
+}
+
+.hidden-text .map{
+    width:100%;
+    margin-top: 10px;
+    margin-left:-5%;
+}
+
+.hidden-text .map img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    
+    border-radius: 15px;
+}
+
+.hidden-text input{
+    width: 55%;
+    text-align: center;
+}
+
+.hidden-text input:focus::placeholder {
+    color: transparent;
+  }
+
+.hidden-text .donate{
+    margin-top: 10px;
+    margin-left: -5%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.hidden-text .btn{
+    margin-top: 13px;
+    margin-left: -10%;
+    margin-bottom: 10px;
+    padding:0;
+    
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+
+    transition: .2s all ease-in-out;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.hidden-text .btn .btn-text{
+    margin-left: 5px;
+}
+
+.hidden-text .btn .btn-img{
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.hidden-text .btn:hover{
+    background-color: rgb(216, 216, 216);
+}
+
+.hidden-text input[type="text"]:focus ~ .btn-img{
+    visibility: hidden;
+}
+
+input[type="checkbox"]:checked + label > .arrow{
+    transform: rotate(270deg);
+    margin-left:-15px;
+}
+
+.info:has(input[type="checkbox"]:checked){
+    max-height: 500px;
+}
+
+.red{
+    border-color: rgb(242, 82, 82);
+    transition: .2s all ease-in-out;
+}
+
+#thanks-img{
+    width: 100%;
+    height: 100%;
+    top:11px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    visibility: hidden;
+
+    transition: .1s all ease-in-out;
+}
+
+.close{
+    visibility: hidden;
+}
+
+.open{
+    visibility: visible;
+}
+
+#thanks-img img{
+    height: 75%;
+    transition: .1s all ease-in-out;
+}
+
+#thanks{
+    visibility: visible;
+}
+
+.kitty-hub{
+    width: 100%;
+    height: 100%;
+    margin-top: 7px;
+
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.kitty-hub img{
+    width: 30px;
+    margin-top: -5px;
+    margin-right: 7px;
+}
+
+.kitty-hub a{
+    color:black;
+}
+
+#more{
+    flex-direction: row;
+}
+
+@media(max-width:700px){
+    body{
+        flex-direction: column;
+        justify-content: none;
+        margin: 0 13% 5%;
+    }
+
+    .background{
+        display: none;
+    }
+    .left{
+        width: 100%;
+        min-height: 0;
+    }
+
+    .left .main-cat{
+        margin-top: 5%;
+    }
+
+    .right{
+        width: 100%;
+        min-height: 0;
+    }
+
+    .info{
+        width: 100%;
+    }
+
+    .with-cat{
+        width:100%;
+    }
+}
+
+
+
+
+
+
+
+

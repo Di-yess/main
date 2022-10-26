@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="background"></div>
+        <!-- LEFT PART -->
+        <div class="left">
+            <div class="main-cat">
+                <img src="/cats/cat.png" alt="'"/>
+            </div>
+            <!-- Description -->
+            <div class="main-about">
+                <ul>
+                    <li class="header">Кличка</li>
+                    <li class="header-info">Пупсик</li>
+                </ul>
+            </div>
+            <div class="main-about">
+                <ul>
+                    <li class="header">Порода</li>
+                    <li class="header-info">Мейн-кун</li>
+                </ul>
+            </div>
+            <div class="main-about">
+                <ul>
+                    <li class="header">Пол</li>
+                    <li class="header-info">Мальчик</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- RIGHT PART  -->
+        <div class="right">
+
+            <!-- ABOUT ME -->
+            <div class="with-cat">
+                <div class="cat-above">
+                    <img src="/cats/cartoon_cat.png" alt="cat">
+                </div>
+                <div class="info" id="info-cat">
+                    <div class="info-inside">
+                        <div class="text">Обо мне</div> 
+                        <input type="checkbox" id="check1">
+                        <label for="check1">
+                            <div class="arrow">&#8250;</div>
+                        </label>
+                    </div>
+                    <div class="hidden-text">
+                        Привет, тут должен был быть текст о Диме, но он любезно согласился закрыться в чулане
+                        и позволил закончить мне. <br>
+                        Меня зовут - Пупсик. Я общителен, ласков и обоятелен. И стану прекрасной компанией для тебя.
+                        Мне нравятся игрушки, мягкая постель и кисы.
+                    </div>
+                </div>
+            </div>
+
+            <!-- CONTACTS -->
+            <div class="info">
+                <div class="info-inside">
+                    <div class="text">Контакты</div> 
+                    <input type="checkbox" id="check2">
+                    <label for="check2">
+                        <div class="arrow">&#8250;</div>
+                    </label>
+                </div>
+                <div class="hidden-text">
+                    <div class="map">
+                        <img src="/cats/Map.png" alt="map"/>
+                    </div>
+                    <br>
+                    Мой адрес: Кэт Йорк, Мяу-авеню, дом 15. Индекс : 501371.
+                </div>
+            </div>
+
+            <!-- DONATE -->
+            <div class="info">
+                <div class="info-inside">
+                    <div class="text">Задонатить</div> 
+                    <input type="checkbox" id="check3">
+                    <label for="check3">
+                        <div class="arrow">&#8250;</div>
+                    </label>
+                </div>
+                <div id="thanks-img">
+                    <img src="/cats/hands.png" alt="hands"/>
+                </div>
+                <div class="hidden-text" id="thanks">
+                    Если у вас есть желание помочь мне содержать Диму, ваши пожертвования будут
+                    очень кстати.^^
+                    <br>
+                    <div class="donate">
+                        <input type="text" id="donate" placeholder="$$$">
+                        <label for="donate">Catcoins</label>
+                    </div>
+                    <div class="btn" onclick="change()">
+                        <div class="btn-text">Задонатить</div>
+                        <div class="btn-img">
+                            <img src="/cats/card_fixed.png" alt="card"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LEARN MORE -->
+            <div class="info">
+                <div class="info-inside">
+                    <div class="text">Больше обо мне</div> 
+                    <input type="checkbox" id="check4">
+                    <label for="check4">
+                        <div class="arrow">&#8250;</div>
+                    </label>
+                </div>
+                <div class="hidden-text" id="more">
+                    <div class="kitty-hub">
+                        <img src="/cats/git.png" alt="git"/>
+                        <a href="#">Kitty hub</a>
+                    </div>
+                    <div class="kitty-hub">
+                        <a href="https://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D0%B9%D0%BD-%D0%BA%D1%83%D0%BD"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Wikipedia-logo-v2.svg/263px-Wikipedia-logo-v2.svg.png" alt=""/></a>
+                        <a href="https://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D0%B9%D0%BD-%D0%BA%D1%83%D0%BD">Мейн-кун</a>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
