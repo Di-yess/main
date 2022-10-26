@@ -348,7 +348,7 @@ input[type="checkbox"]:checked + label > .arrow{
     body{
         flex-direction: column;
         justify-content: none;
-        margin: 0 13% 5%;
+        margin: 0 9% 5%;
     }
 
     .background{
